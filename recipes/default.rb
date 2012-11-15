@@ -53,7 +53,6 @@ end
 service "mongodb" do
   provider Chef::Provider::Service::Init
   supports :status => true, :restart => true, :reload => true
-  action [ :enable, :start ]
 end
 
 service "mongodb" do 
