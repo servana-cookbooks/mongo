@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "recipe[apt]"
+
 case node['platform']
 when "debian", "ubuntu"
   # Adds the repo: http://www.mongodb.org/display/DOCS/Ubuntu+and+Debian+packages
