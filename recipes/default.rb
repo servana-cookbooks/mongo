@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "recipe[apt]"
+include_recipe "apt"
 
 case node['platform']
 when "debian", "ubuntu"
